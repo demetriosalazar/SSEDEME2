@@ -1,0 +1,33 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+.right {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+  }
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .modal_p {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+   background-color:white;
+   overflow:auto
+  }

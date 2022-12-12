@@ -1,0 +1,122 @@
+
+<div class="container">
+
+    <h1>Actualizar Elemento</h1>
+    <hr>
+
+    <div class="col-md-7 ">
+
+        <form>
+            
+            <label class="pt-4">Titulo</label>
+            <div class="input-group">
+                <input
+            name="title"
+            [(ngModel)]="title"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+            
+            <label class="pt-4">Descripcion</label>
+            <div class="input-group">
+                <input
+            name="description"
+            [(ngModel)]="description"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+            
+            <label class="pt-4">Cuerpo</label>
+            <div class="input-group">
+                <input
+            name="body"
+            [(ngModel)]="body"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+
+            <label class="pt-4">Imagen</label>
+            <div class="input-group">
+                <input
+            name="image"
+            [(ngModel)]="image"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+            
+
+            <div class="container text-center">
+                <div class="row">
+          
+                  <div class="col mb-3" >
+                    <label  class="form-label text-center">Fecha de inicio</label>
+                    <input type="date" name="initial_date" [(ngModel)]="initial_date" class="form-control"  >
+                  </div>
+          
+                  <div class="col mb-3">
+                    <label class="form-label text-center">Fecha de termino</label>
+                    <input type="date" name="final_date" [(ngModel)]="final_date"  class="form-control"  >
+                  </div>
+                </div>          
+              </div>
+
+            <div class="form-group">
+                <label class="pt-4">Categoria</label>
+                <select class="form-control" [(ngModel)]="category" name="category">
+                    <option  disabled>escoge categoria</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                </select>
+            </div>
+
+            <label class="pt-4">Instructor</label>
+            <div class="input-group">
+                <input
+            name="instructor"
+            [(ngModel)]="instructor"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+
+            <label class="pt-4">Locacion</label>
+            <div class="input-group">
+                <input
+            name="location"
+            [(ngModel)]="location"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+
+            <div class="form-group">
+                <label class="pt-4">Modalidad</label>
+                <select class="form-control" [(ngModel)]="modality" name="modality">
+                    <option  disabled>escoge categoria</option>
+                    <option value="Presencial">Presencial</option>
+                    <option value="En Linea">En linea</option>
+                </select>
+            </div>
+           
+            
+            <label class="pt-4">link</label>
+            <div class="input-group">
+                <input
+            name="link"
+            [(ngModel)]="link"
+            class="form-control"
+            type="text"
+            > 
+            </div>
+
+
+        <button type="submit" class="btn btn-primary px-4 float-end mt-5" style="margin-left:1.5rem;" (click)="Actualizar()">Actualizar</button>
+        <button class="btn btn-danger px-4 float-end mt-5" (click)="closeModal()">Cerrar</button>
+    </form>
+    
+</div>
+</div>

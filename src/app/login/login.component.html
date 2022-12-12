@@ -1,0 +1,43 @@
+<div class="container-fluid all-center">
+    <div>
+        <div class="row">
+            <h1>Login SSE</h1>
+        </div>
+        <div class="row p-4 bg-white shadow rounded">
+            <div class="col-md-5 center" >
+                <img class="small-img img-fluid" src="https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png"> 
+            </div>
+                <div class="col-md-7 ">
+                    <form (ngSubmit)="verificar()">
+                    <label class="pt-4">Usuario</label>
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                        <input
+                    name="usuario"
+                    [(ngModel)]="usuario"
+                    class="form-control"
+                    type="text"
+                    placeholder="Ingresa usuario"
+                    > 
+                    </div>
+                    
+                    <label class="pt-4">Contraseña</label>
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                        <input
+                    name="contraseña"
+                    [(ngModel)]="contrasena"
+                    class="form-control"
+                    type="password"
+                    placeholder="Ingresa contraseña"
+                    > 
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary px-4 float-end mt-5">login</button>
+                </form>
+                
+            </div>
+           
+        </div>
+    </div>
+</div>
